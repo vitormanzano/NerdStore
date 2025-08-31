@@ -5,7 +5,7 @@ using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Catalago.Application.Services
 {
-    internal class ProdutoAppService(IProdutoRepository _produtoRepository,
+    public class ProdutoAppService(IProdutoRepository _produtoRepository,
                                      IMapper _mapper,
                                      IEstoqueService _estoqueService) : IProdutoAppService
     {

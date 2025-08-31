@@ -15,6 +15,8 @@ namespace NerdStore.Catalogo.Domain
         public Guid CategoriaId { get; private set; }
         public Categoria Categoria { get; private set; }
 
+        protected Produto() { }
+
         public Produto(string nome, string descricao, bool ativo, decimal valor, DateTime dataCadastro, string imagem, Dimensoes dimensoes, Guid categoriaId)
         {
             Nome = nome;
